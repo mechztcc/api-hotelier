@@ -14,10 +14,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.get('/', (req: Request, res: Response) => {
-  res.json('Ok');
-});
-
 const port = process.env.APP_PORT;
 
 app.listen(port, () => {

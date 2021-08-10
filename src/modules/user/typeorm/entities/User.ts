@@ -8,7 +8,7 @@ import {
 
 @Entity('users')
 export default class User {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('increment')
   id: number;
 
   @Column()
