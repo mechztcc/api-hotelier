@@ -6,11 +6,13 @@ import { Response } from 'express-serve-static-core';
 
 /* Its necessary to DB Running */
 import '@shared/typeorm';
+import routes from './routes';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(routes);
 
 app.get('/', (req: Request, res: Response) => {
   res.json('Ok');
