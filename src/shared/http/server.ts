@@ -34,6 +34,8 @@ app.use(
 );
 
 const port = process.env.APP_PORT;
+/* teste */
+const teste = process.env.APP_TESTE;
 
 app.listen(port, () => {
   console.log('Server Running!', port);
